@@ -7,7 +7,7 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="http://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Open+Sans:300,400,600,700,800,900" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Open+Sans:300,400,600,700,800,900" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
@@ -45,7 +45,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header">  
+		<header id="header" class="full-header">
 
 			<div id="header-wrap">
 
@@ -65,16 +65,16 @@
 					<nav id="primary-menu" class="not-dark">
 
 							<ul>
-									<li class="active"><a href="#"><div>About us</div></a></li>
+									<li class="active"><a href="#about"><div>About us</div></a></li>
 									<li><a href="#"><div>Our Partners</div></a>
 										<ul>
 											<li><a href="#mc"><div>meteocontrol</div></a></li>
 										
 										</ul>
 									</li>
-									<li><a href="#"><div>Developement</div></a></li>
+									<li><a href="#contact"><div>Development</div></a></li>
 									<li><a href="#careers"><div>Careers</div></a></li>
-									<li><a href="#contact"><div>Contact</div></a></li>
+									<li><a href="#foot"><div>Contact</div></a></li>
 								</ul>
 
 						
@@ -82,9 +82,9 @@
 						<!-- Top Search
 						============================================= -->
 						<div id="top-search">
-							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>	
 							<form action="search.html" method="get">
-								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+							  <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
 							</form>
 						</div><!-- #top-search end -->
 
@@ -95,7 +95,7 @@
 									<!--	<li><a href="#"><div><img src="images/icons/flags/german.png" alt="Deutsch" Deutsch</div></a></li> -->
 									</ul>
 								</li>
-							</ul>
+						</ul>
 
 
 					</nav><!-- #primary-menu end -->
@@ -117,8 +117,10 @@
 						<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 class="font-primary nott">Technology within our reach</h2>
-								<!--	<p class="t300 font-primary d-none d-sm-block">Our goal is to develop brazilian greentech</p>-->
-									<a href="#" class="button button-rounded button-large nott ls0 font-primary">More info</a>
+								  <!--	
+									<p class="t300 font-primary d-none d-sm-block">Our goal is to develop brazilian greentech</p>
+									-->
+									<a href="#about" class="button button-rounded button-large nott ls0 font-primary">More info</a>
 								</div>
 							</div>
 						</div>
@@ -126,12 +128,13 @@
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 class="font-primary">meteocontrol official distributor</h2>
-									<p class="t300 font-primary d-none d-sm-block">State of art photovoltaic monitoring and power plant control </p>
-									<a href="#" class="button button-rounded button-large nott ls0 font-primary">Get Started</a>
+									<p class="t300 font-primary d-none d-sm-block">State of art photovoltaic monitoring and power control </p>
+									<a href="#mc" class="button button-rounded button-large nott ls0 font-primary">Get Started</a>
 								</div>
 							</div>
 						</div>
-					<!--	<div class="swiper-slide dark" style="background-image: url('images/tsky/front/touch.jpg'); background-size: cover">
+					<!--
+					<div class="swiper-slide dark" style="background-image: url('images/tsky/front/touch.jpg'); background-size: cover">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 class="font-primary">Flexible Works.</h2>
@@ -140,7 +143,8 @@
 								</div>
 							</div>
 						</div>
-					</div>-->
+					</div>
+					-->
 					<!-- Slider Arrows
 					============================================= -->
 					<div class="slider-arrow-left" class="nobg"><i class="icon-line-arrow-left"></i></div>
@@ -157,6 +161,7 @@
 		<!-- NEW Content
 		============================================= -->
 		<section id="content">
+			
 
 				<div class="content-wrap">
 	
@@ -166,17 +171,17 @@
 	
 								<div class="col-lg-12">
 									<div class="heading-block bottommargin-sm">
-										<h3>About us</h3>
+										<h3>About us</h3><a id="about"></a>
 									</div>
 	
 									<p class="nobottommargin">TOUCHSKY is UNIMAGNA METALÚRGICA LTDA. solar business division. Our goal is to develop, manufacture and commercialize accessible cleantech solutions for the Brazilian market. Our strategy is based on three pillars: technology, strategic partnerships and local development.
-
-										</p>
+									</p>
 								</div>
 	
-								<!--<div class="col-lg-3">
-									<a href="#" class="button button-3d button-dark button-large btn-block center" style="margin-top: 30px;">Check our Services</a>
-								</div>
+								<!--
+									<div class="col-lg-3">
+									  <a href="#" class="button button-3d button-dark button-large btn-block center" style="margin-top: 30px;">Check our Services</a>
+								  </div>
 								-->
 							</div>
 						</div>
@@ -212,9 +217,11 @@
 
 						<div class="col_one_third nobottommargin col_last">
 								<div class="feature-box media-box">
-									<!--<div class="fbox-media">
-										<img src="images/services/1.jpg" alt="Why choose Us?">
-									</div>-->
+									<!--
+										<div class="fbox-media">
+											<img src="images/services/1.jpg" alt="Why choose Us?">
+										</div>
+									-->
 									<div class="fbox-desc">
 										<h3>Expertise</h3>
 										<p>Our team combines strong technical background with extensive brazilian business management know-how supporting all activities.</p>
@@ -226,146 +233,103 @@
 					</div>
 	
 					<div class="section parallax bottommargin-lg" style="background-image: url('images/tsky/pv43c.jpg'); padding: 100px 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
-					<!--	<div class="heading-block center nobottomborder nobottommargin">
+					<!--	
+						<div class="heading-block center nobottomborder nobottommargin">
 							<h2>We believe in the catalyzing power of technology, empowering people to reach beyond and generating long lasting value for society.</h2>
-						</div>-->
+						</div>
+					-->
 					</div>
-		
-
-		
-		
-		
+				</div>
+			</section>
+				
 		<!-- Content from demo-business
 		============================================= -->
 		<section id="content">
 
-<!--			<div class="content-wrap nobottompadding" style="z-index: 1;"> -->
+		  <div class="content-wrap nobottompadding" style="z-index: 1;">
 
-			<div class="container topmargin clearfix">
-
-
-					<!-- About Us
-				============================================= -->
-	<!--		<div class="section nopadding notopmargin nobg clearfix" style="border-top: 1px solid #EEE; border-bottom: 1px solid #EEE;">
-						<div class="row align-items-stretch clearfix">
-							<div class="col-lg-6 center col-padding" style="background: url('images/tsky/pv42.jpg') center center no-repeat; background-size: cover;">
-								<div>&nbsp;</div>
-							</div>
-	
-							<div class="col-lg-6 col-padding">
-								<div>
-									<div style="position: relative;">
-										<div class="heading-block noborder" data-heading="A">
-											<h3 class="nott ls0">About Us</h3>
-										</div>
-									</div>
-	-->							
-									<!-- About Us Featured Boxes
-									============================================= -->
-	<!--								<div class="row clearfix">
-										<div class="col-lg-10 col-md-8 bottommargin">
-											<div class="feature-box fbox-plain">
-												<div class="fbox-icon">
-													<a href="#"><i class="icon-et-globe"></i></a>
-												</div>
-												<h3>All over the World</h3>
-												<p>TOUCHSKY is a new division within UNIMAGNA METALÚRGICA LTDA. focused in solar business. We believe in the catalyzing power of technology, empowering people to reach beyond and generating long lasting value for society.</p>
-											</div>
-										</div>
-										<div class="col-lg-10 col-md-8 bottommargin">
-											<div class="feature-box fbox-plain">
-												<div class="fbox-icon">
-													<a href="#"><i class="icon-et-gears"></i></a>
-												</div>
-												<h3>Fully Customisable</h3>
-												<p>This division is born under the challenge of aggregating technology in our production chain and under the untapped resource that is our tropical sun.</p>
-											</div>
-										</div>
-										<div class="col-lg-10 col-md-8">
-											<div class="feature-box fbox-plain">
-												<div class="fbox-icon">
-													<a href="#"><i class="icon-et-document"></i></a>
-												</div>
-												<h3>Helpfull Documentation</h3>
-												<p>Our long term goal is to produce solar technologies in Brazil through international cooperations and local developments. We are looking for technology partners interested in entering the Brazilian market.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						
-						</div>
-					</div>
-
-		-->		
+			  <div class="container clearfix">
 				
 					<!-- METECONTROL
-					============================================= -->
+					============================================= 
 					<div class="section nobg clearfix"><a id="mc"></a>
-							<div class="container clearfix">
-								<div class="heading-block bottommargin-lg center noborder" data-heading="M">
-									<h3 class="nott ls0">meteocontrol</h3>
-								</div>
-								<div class="row clearfix">
-										<div class="center col-lg-7 offset-lg-2 bottommargin">
-											<h3 class="text-rotater font-secondary" data-separator="," data-rotate="fadeInRight" data-speed="3500">Touchsky is the official distributor of meteocontrol solutions in Brazil. Maximize the yeld of your PV plant through monotoring:</h3>
-										</div>			
-									</div>
+							<div class="heading-block bottommargin-lg center noborder" data-heading="M">
+								<h3 class="nott ls0">meteocontrol</h3>
+							</div>
+							<div class="row clearfix">
+								<div class="center col-lg-7 offset-lg-2 bottommargin">
+									<h3 class="text-rotater font-secondary" data-separator="," data-rotate="fadeInRight" data-speed="3500">Touchsky is the official distributor of meteocontrol solutions in Brazil. Maximize the yeld of your PV plant through monotoring:</h3>
+								</div>			
+							</div>
+						<div class="clear"></div>
+					-->
+
+					<!-- What We Do
+					============================================= -->
+					<div class="heading-block center noborder" data-heading="M"><a id="mc"></a>
+							<h3>meteocontrol</h3>
+					</div>
+					<div class="row clearfix">
+						<div class="center col-lg-8 offset-lg-2 bottommargin">
+							<h3 class="text-rotater font-secondary" data-separator="," data-rotate="fadeInRight" data-speed="3500">Touchsky is the official distributor of meteocontrol solutions in Brazil. Maximize the yield of your PV plant through monitoring:</h3>
+						</div>
+	
 					<div class="clear"></div>
 
-						<!-- Features colomns
-						============================================= -->
-						<div class="row clearfix">
-							<div class="col-lg-4 bottommargin-sm">
-								<div class="feature-box media-box fbox-bg">
-									<div class="fbox-media">
-										<a href="https://www.meteocontrol.com/en/photovoltaic-monitoring/products/stations/"><img class="image_fade" src="images/tsky/mcproduct/1t.jpg" alt="Featured Box Image"></a>
-									</div>
-									<div class="fbox-desc">
-										<h3 class="nott ls0 t600">Weather Stations<span class="subtitle font-secondary t300 ls0">Sensors and measurement control cabinet for centrally recording and processing all system data in your PV power plant for indoor and outdoor use. Individually configurable stations for tailor-made solutions.</span></h3>
-										<a href="https://www.meteocontrol.com/en/photovoltaic-monitoring/products/stations/" class="button-link noborder color">Read More</a>
-									</div>
+
+
+					<!-- Features colomns
+					============================================= -->
+					<div class="row clearfix">
+						<div class="col-lg-4 bottommargin-sm">
+							<div class="feature-box media-box fbox-bg">
+								<div class="fbox-media">
+									<a href="https://www.meteocontrol.com/en/photovoltaic-monitoring/products/stations/"><img class="image_fade" src="images/tsky/mcproduct/1t.jpg" alt="Featured Box Image"></a>
+								</div>
+								<div class="fbox-desc">
+									<h3 class="nott ls0 t600">Weather Stations<span class="subtitle font-secondary t300 ls0">Sensors and measurement control cabinet for centrally recording and processing all system data in your PV power plant for indoor and outdoor use. Individually configurable stations for tailor-made solutions.</span></h3>
+									<a href="https://www.meteocontrol.com/en/photovoltaic-monitoring/products/stations/" class="button-link noborder color">Read More</a>
 								</div>
 							</div>
+						</div>
 
-							<div class="col-lg-4 bottommargin-sm">
-								<div class="feature-box media-box fbox-bg">
-									<div class="fbox-media">
-										<a href="https://www.meteocontrol.com/en/photovoltaic-monitoring/products/bluelog-x-series-x-1000-x-3000-x-6000/"><img class="image_fade" src="images/tsky/mcproduct/2t.jpg" alt="Featured Box Image"></a>
-									</div>
-									<div class="fbox-desc">
-										<h3 class="nott ls0 t600">Data Loggers<span class="subtitle font-secondary t300 ls0">Core monitoring component to record and control all of your PV systems data. Whether your portfolio varies or has many uniform sites, you can meet the all requirements with maximum flexibility.</span></h3>
-										<a href="https://www.meteocontrol.com/en/photovoltaic-monitoring/products/bluelog-x-series-x-1000-x-3000-x-6000/" class="button-link noborder color">Read More</a>
-									</div>
+						<div class="col-lg-4 bottommargin-sm">
+							<div class="feature-box media-box fbox-bg">
+								<div class="fbox-media">
+									<a href="https://www.meteocontrol.com/en/photovoltaic-monitoring/products/bluelog-x-series-x-1000-x-3000-x-6000/"><img class="image_fade" src="images/tsky/mcproduct/2t.jpg" alt="Featured Box Image"></a>
+								</div>
+								<div class="fbox-desc">
+									<h3 class="nott ls0 t600">Data Loggers<span class="subtitle font-secondary t300 ls0">Core monitoring component to record and control all of your PV systems data. Whether your portfolio varies or has many uniform sites, you can meet the all requirements with maximum flexibility.</span></h3>
+									<a href="https://www.meteocontrol.com/en/photovoltaic-monitoring/products/new-bluelog-x-series-xm-xc/" class="button-link noborder color">Read More</a>
 								</div>
 							</div>
+						</div>
 
-							<div class="col-lg-4 bottommargin-sm">
-								<div class="feature-box media-box fbox-bg">
-									<div class="fbox-media">
-										<a href="#"><img class="image_fade" src="images/tsky/mcproduct/3t.jpg" alt="Featured Box Image"></a>
-									</div>
-									<div class="fbox-desc">
-										<h3 class="nott ls0 t600">VCOM<span class="subtitle font-secondary t300 ls0">The VCOM (Virtual Control Room) provides an overview of the performance of your entire system portfolio worldwide, in a straightforward manner and available at any time, so faults can be quickly located.</span></h3>
-										<a href="https://www.meteocontrol.com/en/photovoltaic-monitoring/products/vcom/" class="button-link noborder color">Read More</a>
-									</div>
+						<div class="col-lg-4 bottommargin-sm">
+							<div class="feature-box media-box fbox-bg">
+								<div class="fbox-media">
+									<a href="#"><img class="image_fade" src="images/tsky/mcproduct/3t.jpg" alt="Featured Box Image"></a>
+								</div>
+								<div class="fbox-desc">
+									<h3 class="nott ls0 t600">VCOM<span class="subtitle font-secondary t300 ls0">The VCOM (Virtual Control Room) provides an overview of the performance of your entire system portfolio worldwide, in a straightforward manner and available at any time, so faults can be quickly located.</span></h3>
+									<a href="https://www.meteocontrol.com/en/photovoltaic-monitoring/products/vcom/" class="button-link noborder color">Read More</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-
 				<div class="row topmargin-lg clearfix">
 					<div class="col-lg-6 nopadding">
 						<!-- Youtube Video Link
 						============================================= -->
-				<a href="https://www.youtube.com/watch?v=88Avb_DVhGI" data-lightbox="iframe">
+						<a href="https://www.youtube.com/watch?v=88Avb_DVhGI" data-lightbox="iframe">
 							<img src="images/tsky/video.jpg" alt="Youtube Video" class="image_fade" style="box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15); border-radius: 6px;">
 							<i class="icon-play" style="position: absolute; top: 50%; left: 50%; font-size: 60px; color: #FFF; margin-top: -45px; margin-left: -23px"></i>
 						</a>
-<!--						<iframe width="560" height="315" src="https://www.youtube.com/embed/88Avb_DVhGI?controls=0&amp;start=000" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	-->
-	
+						<!--						
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/88Avb_DVhGI?controls=0&amp;start=000" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+						-->
 					</div>
 
 
@@ -378,52 +342,53 @@
 						</div>
 						<p class="t400">Data loggers of the blue’Log X-Series record all relevant system data, provide various interfaces and functionality for power plant control and thus enable grid-compliant feed-in for PV systems. <br> For the monitoring portal VCOM (virtual control room), the blue’Log X-Series serves as the heart of on-site monitoring.</p>
 			
-						<a href="https://bluelog.meteocontrol.com/" class="button-link bottommargin">Read More</a>
+						<a href="https://www.meteocontrol.com/en/photovoltaic-monitoring/products/new-bluelog-x-series-xm-xc/" class="button-link bottommargin">Read More</a>
 					</div>
 				</div>
 			</div>
 		</div>
 			
 
-<!--	<div class="clear line"></div> -->
+		<div class="clear line"></div>
 
 		<!-- LATEST NEWS
-				============================================= -->
-				<div class="section nobg clearfix">
-						<div class="container clearfix">
-							<div class="heading-block bottommargin-lg center noborder" data-heading="N">
-								<h3 class="nott ls0">Latest News</h3>
-							</div>
-						</div>
+		============================================= -->
+		<div class="section nobg clearfix">
+			<div class="container clearfix">
+				<div class="heading-block bottommargin-lg center noborder" data-heading="N">
+						<h3 class="nott ls0">Latest News</h3>
+					</div>
+				</div>
 	
-						<!-- LATEST NEWS - Carousel
-						============================================= -->
-						<div id="oc-features" class="owl-carousel owl-carousel-full image-carousel carousel-widget">
-							<div class="oc-item">
-								<div class="row cleafix">
-									<div class="col-xl-8">
-										<img src="images/tsky/news/1.jpg" alt="">
-									</div>
-									<div class="col-xl-4" style="padding: 20px 0 0 20px;">
-										<h3>meteocontrol expands market presence in Brazil.</h3>
-										<p>Touchsky and meteocontrol: Partnership for the sales of monitoring solutions for PV systems .</p>
-										<a href="#" class="button-link">Read More</a>
-									</div>
-								</div>
+				<!-- LATEST NEWS - Carousel
+				============================================= -->
+				<div id="oc-features" class="owl-carousel owl-carousel-full image-carousel carousel-widget">
+					<div class="oc-item">
+						<div class="row cleafix">
+							<div class="col-xl-8">
+								<img src="images/tsky/news/1.jpg" alt="">
 							</div>
-<!--								<div class="oc-item">
+					  <div class="col-xl-4" style="padding: 20px 0 0 20px;">
+							<h3>meteocontrol expands market presence in Brazil.</h3>
+							<p>Touchsky and meteocontrol: Partnership for the sales of monitoring solutions for PV systems .</p>
+							<a href="https://www.meteocontrol.com/en/company/news/detail/meteocontrol-expands-market-presence-in-brazil-1/" class="button-link">Read More</a>
+						</div>
+					</div>
+				</div>
+										
+						<div class="oc-item">
 								<div class="row cleafix">
 									<div class="col-xl-8">
 										<img src="images/tsky/news/NY.jpg" alt="">
 									</div>
 								<div class="col-xl-4" style="padding: 20px 0 0 20px;">
 										<h3>Touchsky at BNEF Summit in New York</h3>
-										<p>Touchsky will attend the Brazilian Business Matchmaking session sponsored by APEX. Prospective partners are mostly welcome to schedule a meeting during the event. Please contact us at <a href="mailto:contact@touchsky.tech" class="button-link">contact@touchsky.tech</a>.</p>
+										<p>Touchsky will attend the Brazilian Business Matchmaking session sponsored by APEX Brazil. Prospective partners are mostly welcome to schedule a meeting during the event. Please contact us at <a href="mailto:contact@touchsky.tech" class="button-link">contact@touchsky.tech</a>.</p>
 										<a href="https://about.bnef.com/summit/newyork/" class="button-link">Read More</a>
 									</div>
 								</div>
-							</div>-->
-<!--						<div class="oc-item">
+							</div>
+							<!--						<div class="oc-item">
 								<div class="row cleafix">
 									<div class="col-xl-8">
 										<img src="demos/business/images/carousel/3.jpg" alt="">
@@ -436,88 +401,93 @@
 								</div>
 							</div>
 						</div>-->
-					</div> 
+			</div> 
+		</div>
+		
 	
 		<div class="clear line"></div> 
 
-				<!-- Brazil Solar FActs
-				============================================= -->
-				<div class="section nobg nobottommargin clearfix">
-					<div class="container clearfix">
-						<div class="heading-block center noborder" data-heading="B">
-							<h3 class="nott ls0">Brazilian Market Facts</h3>
+		<!-- Brazil Solar FActs
+		============================================= -->
+		<div class="section nobg nobottommargin clearfix">
+			<div class="container clearfix">
+				<div class="heading-block center noborder" data-heading="B">
+					<h3 class="nott ls0">Brazilian Market Facts</h3>
+				</div>
+			</div>
+		</div>
+
+		<!-- Brazilian Market
+		============================================= -->
+		<div class="section nobg notopmargin clearfix">
+			<div class="container clearfix">
+				<div class="col_one_third">
+					<div class="feature-box fbox-plain">
+						<div class="fbox-icon">
+								<a href="#"><img src="images/tsky/icons/globe.svg" alt=""></a>
 						</div>
+					  <h3 class="nott t600 ls0">Solar Radiance</h3>
+						<p>With a daily solar radiance: 4.500 to 6.300 Wh/m² <a href="http://labren.ccst.inpe.br/atlas_2017.html">(Atlas Brasileiro de Energia Solar)</a>, it is 5th place in world solar radiance potential.</p>
 					</div>
 				</div>
 
-				<!-- Brazilian Market
-				============================================= -->
-				<div class="section nobg notopmargin clearfix">
-					<div class="container clearfix">
-						<div class="col_one_third">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-										<a href="#"><img src="images/tsky/icons/globe.svg" alt=""></a>
-								</div>
-							<h3 class="nott t600 ls0">Solar Radiance</h3>
-								<p>With a daily solar radiance: 4.500 to 6.300 Wh/m² <a href="http://labren.ccst.inpe.br/atlas_2017.html">(Atlas Brasileiro de Energia Solar)</a>, it is 5th place in world solar radiance potential.</p>
-							</div>
+				<div class="col_one_third">
+					<div class="feature-box fbox-plain">
+						<div class="fbox-icon">
+							<a href="#"><img src="images/tsky/icons/growth.svg" alt=""></a>
 						</div>
+						<h3 class="nott t600 ls0">Increasing Market</h3>
+						<p>By 2040, PV rooftop in Brazil is expected to account for 20% of the country electricity <a href="https://about.bnef.com/new-energy-outlook/">(Bloomberg New Energy Outlook 2017)</a></p>
+					</div>
+				</div>
 
-						<div class="col_one_third">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="images/tsky/icons/growth.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Increasing Market</h3>
-								<p>By 2040, PV rooftop in Brazil is expected to account for 20% of the country electricity <a href="https://about.bnef.com/new-energy-outlook/">(Bloomberg New Energy Outlook 2017)</a></p>
-							</div>
+				<div class="col_one_third col_last">
+					<div class="feature-box fbox-plain">
+						<div class="fbox-icon">
+							<a href="#"><img src="images/tsky/icons/group.svg" alt=""></a>
 						</div>
+						<h3 class="nott t600 ls0">Country Policies</h3>
+						<p>PV has entered the country political agenda, with the <a href="http://www.epe.gov.br/pde/Paginas/default.aspx">Brazilian Ten Year Energy Expansion Plan</a> issued in July 2017 projecting 13GW of solar installed capacity by 2026.</p>
+					</div>
+				</div>
 
-						<div class="col_one_third col_last">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="images/tsky/icons/group.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Country Policies</h3>
-								<p>PV has entered the country political agenda, with the <a href="http://www.epe.gov.br/pde/Paginas/default.aspx">Brazilian Ten Year Energy Expansion Plan</a> issued in July 2017 projecting 13GW of solar installed capacity by 2026.</p>
-							</div>
+				<div class="clear"></div>
+
+				<div class="col_one_third">
+					<div class="feature-box fbox-plain">
+						<div class="fbox-icon">
+							<a href="#"><img src="images/tsky/icons/team.svg" alt=""></a>
 						</div>
+						<h3 class="nott t600 ls0">Positive Regulation</h3>
+						<p><a href="www.aneel.gov.br/cedoc/ren2015687.pdf"> Recent regulation of the market</a> has set a positive framework for the sector to operate in a healthy and self-sustained way.</p>
+					</div>
+				</div>
 
-						<div class="clear"></div>
-
-						<div class="col_one_third">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="images/tsky/icons/team.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Positive Regulation</h3>
-								<p><a href="www.aneel.gov.br/cedoc/ren2015687.pdf"> Recent regulation of the market</a> has set a positive framework for the sector to operate in a healthy and self-sustained way.</p>
-							</div>
+				<div class="col_one_third">
+					<div class="feature-box fbox-plain">
+						<div class="fbox-icon">
+							<a href="#"><img src="images/tsky/icons/analysis.svg" alt=""></a>
 						</div>
+						<h3 class="nott t600 ls0">Annual Growth</h3>
+						<p>In 2018, Brazil has reached the milestone of a total installed PV power of 2 GW connectec to the grid.</p>
+					</div>
+				</div>
 
-						<div class="col_one_third">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="images/tsky/icons/analysis.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Annual Growth</h3>
-								<p>In 2018, Brazil has reached the milestone of a total installed PV power of 2 GW connectec to the grid.</p>
-							</div>
+				<div class="col_one_third col_last">
+					<div class="feature-box fbox-plain">
+						<div class="fbox-icon">
+							<a href="#"><img src="images/tsky/icons/light.svg" alt=""></a>
 						</div>
+						<h3 class="nott t600 ls0">Future Estimates</h3>
+						<p>In 2019, it is expected accelerated  <a href="http://www.absolar.org.br/noticia/noticias-externas/energia-solar-fotovoltaica-ultrapassara-a-marca-de-3000-megawatts-no-brasil-em-2019.html"> growth </a> surpassing 3 GW by the end of the year. </p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-						<div class="col_one_third col_last">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon">
-									<a href="#"><img src="images/tsky/icons/light.svg" alt=""></a>
-								</div>
-								<h3 class="nott t600 ls0">Future Estimates</h3>
-								<p>In 2019, it is expected accelerated  <a href="http://www.absolar.org.br/noticia/noticias-externas/energia-solar-fotovoltaica-ultrapassara-a-marca-de-3000-megawatts-no-brasil-em-2019.html"> growth </a> surpassing 3 GW by the end of the year. </p>
-							</div>
-						</div>
-</div>
-	<!--					<div class="clear"></div>-->
-<!--
+		<!--					
+		<div class="clear"></div>-->
+		<!--
 						<div class="col_one_third bottommargin">
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
@@ -547,57 +517,175 @@
 								<p>We have covered each &amp; everything in our Documentation including Videos &amp; Screenshots.</p>
 							</div>
 						</div>
--->
-					<!--	<div class="clear line"></div>-->
+		-->
+		<!--	<div class="clear line"></div>-->
 
+    
+		<!-- Parallax Area
+		============================================= -->
+		
+		<div class="section parallax topmargin-lg nobottommargin notopborder clearfix" 		  			  style="background-image: url('images/tsky/front/touch3.jpg'); background-size: cover;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+			<div class="container clearfix"><a id="contact"></a>
 
-				<!-- Parallax Area
-				============================================= -->
-				<div class="section parallax topmargin-lg nobottommargin notopborder clearfix" style="background-image: url('images/tsky/front/touch3.jpg'); background-size: cover;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
-					<div class="container clearfix"><a id="contact"></a>
-
-						<div class="row cleafix">
-							<div class="col-md-6 dark" style="padding-left: 60px;">
-								<div class="heading-block bottommargin-sm noborder">
-							<!--		<h3 class="nott" style="font-size: 46px; font-weight: 700; letter-spacing: -2px; line-height: 58px">Contact us</h3>-->
+				<div class="row cleafix">
+					<div class="col-md-6 dark" style="padding-left: 60px;">
+						<div class="heading-block bottommargin-sm noborder">
+							<h3 class="nott" style="font-size: 42px; font-weight: 700; letter-spacing: -2px; line-height: 58px">We are looking for technology partners.</h3>
+						
 							<a href="mailto:contact@touchsky.tech" class="button button-3d button-xlarge button-rounded button-aqua">Contact us</a>
-								</div>
-								<!--	<p>Appropriately implement user friendly e-markets and backend processes. Competently expedite competitive vortals rather than client-based testing procedures. Professionally matrix exceptional schemas vis-a-vis leveraged paradigms. Authoritatively coordinate just in time networks with strategic potentialities.</p>
-								<a href="#" class="button-link noleftmargin">Read More</a>-->
-							</div>
+						</div>
+						<!--	
+							<p>Appropriately implement user friendly e-markets and backend processes. Competently expedite competitive vortals rather than client-based testing procedures. Professionally matrix exceptional schemas vis-a-vis leveraged paradigms. Authoritatively coordinate just in time networks with strategic potentialities.</p>
+							<a href="#" class="button-link noleftmargin">Read More</a>
+						-->
+					</div>
 					<div class="topmargin d-block d-lg-none d-xl-block"></div>
-				</div>	
-			</div>
-
 				</div>
+			</div>
+		</div>
 
-					<!-- Team Work
-				============================================= -->
-				<div class="section nobg nobottompadding nobottommargin clearfix">
-						<div class="container clearfix">
-							<div class="row clearfix">
+		<!-- Team Work
+		============================================= -->
+		<div class="section nobg nobottompadding nobottommargin clearfix">
+			<div class="container clearfix">
+				<div class="row clearfix">
+
+					<div class="col-lg-5 order-lg-12"><a id="careers"></a>
+						<div class="device-xl device-md topmargin-lg"></div>
+						<h3 class="nobottommargin" style="font-size: 40px;">We are hiring sales representatives.</h3>
+						<!--	
+							<h3 class="t300 ls4 lowercase" style="font-size: 15px; color: #999;">Designed by Semicolonweb</h3>
+						-->
+						<p>We are recruiting for sales positions in national territory. Candidates should send their CV to <a href="mailto:contact@touchsky.tech">contact@touchsky.tech</a> </p>
+						<!--	
+							<a href="#" class="button-link bottommargin">Read More</a>
+						-->
+					</div>
+
+					<div class="col-lg-7 order-lg-1">
+						<div style="position: relative; margin-bottom: 0;" class="ohidden" data-height-xl="520" data-height-lg="520" data-height-md="520" data-height-sm="500" data-height-xs="300">
+							<img class="man" src="images/tsky/teamwork.jpg" style="position: absolute; top: 0; left: auto;" alt="Chrome">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		<div class="clear line"></div> 
+
+
+	</section><!-- #content end -->
+
+		<!-- Footer - NEW
+		============================================= -->
+		<footer id="footer" class="noborder" style="padding: 30px 0; background-color: #FFF">
+
+				<div class="container clearfix">
 	
-								<div class="col-lg-5 order-lg-12"><a id="careers"></a>
-									<div class="device-xl device-md topmargin-lg"></div>
-									<h3 class="nobottommargin" style="font-size: 40px;">We are hiring sales representatives.</h3>
-								<!--	<h3 class="t300 ls4 lowercase" style="font-size: 15px; color: #999;">Designed by Semicolonweb</h3>-->
-									<p>We are recruiting for sales positions in national territory. Candidates should send their CV to contact@touchsky.tech.</p>
-								<!--	<a href="#" class="button-link bottommargin">Read More</a>-->
-								</div>
-	
-								<div class="col-lg-7 order-lg-1">
-									<div style="position: relative; margin-bottom: 0;" class="ohidden" data-height-xl="520" data-height-lg="520" data-height-md="520" data-height-sm="500" data-height-xs="300">
-										<img class="man" src="images/tsky/teamwork.jpg" style="position: absolute; top: 0; left: auto;" alt="Chrome">
+					<!-- Footer Widgets
+					============================================= -->
+					<div class="footer-widgets-wrap clearfix"><a id="foot"></a>
+						<div class="col_one_fourth">
+							<img src="images/tsky/Touchsky247x250.jpg" alt="" height="150" style="margin-top: -30px">
+						</div>
+						<div class="col_three_fourth col_last">
+								<div class="col_one_third">
+									<div class="widget widget_links clearfix">
+										<h4>Contact Us</h4>
+										<div class="footer-content">
+											<abbr title="Phone Number"><strong>Phone:</strong></abbr> +55 11 4481 8600 <br>
+											<abbr title="Email Address"><strong>Email:</strong></abbr> <a href="mailto:contact@touchsky.tech">contact@touchsky.tech</a>
+										</div>
 									</div>
 								</div>
+								<div class="col_one_third">
+									<div class="widget clearfix">
+										<h4>Location</h4>
+										<div class="footer-content">
+											<address>
+												<strong>Headquarters:</strong><br>
+												Rd. Alkindar M. Junqueira km 44.5<br>
+												Bragança Paulista, SP 12914-970<br>
+											</address>
+										</div>
+									</div>
+								</div>
+								<div class="col_one_third col_last">
+									<div class="widget widget_links clearfix">
+										<h4>Social</h4>
+										<a href="#" class="social-icon nobg si-small si-light si-facebook">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+										<a href="#" class="social-icon nobg si-small si-light si-twitter">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										</a>
+										<a href="#" class="social-icon nobg si-small si-light si-gplus">
+											<i class="icon-gplus"></i>
+											<i class="icon-gplus"></i>
+										</a>
+										<a href="#" class="social-icon nobg si-small si-light si-instagram">
+											<i class="icon-instagram"></i>
+											<i class="icon-instagram"></i>
+										</a>
+										<a href="#" class="social-icon nobg si-small si-light si-dribbble">
+											<i class="icon-dribbble"></i>
+											<i class="icon-dribbble"></i>
+										</a>
+		
+										<a href="#" class="social-icon nobg si-small si-light si-vimeo">
+											<i class="icon-vimeo"></i>
+											<i class="icon-vimeo"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="line line-sm"></div>
+							<div class="col_two_third">
+								<small class="t300" style="color: #AAA">Copyrights &copy; 2019 All Rights Reserved by Touchsky.</small>
+							</div>
+							<div class="col_one_third col_last">
+<!--								<div class="fright clearfix">
+								<a href="#" class="social-icon si-mini si-rounded si-colored si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
 	
+									<a href="#" class="social-icon si-mini si-rounded si-colored si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+	
+									<a href="#" class="social-icon si-mini si-rounded si-colored si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+	
+									<a href="#" class="social-icon si-mini si-rounded si-colored si-pinterest">
+										<i class="icon-pinterest"></i>
+										<i class="icon-pinterest"></i>
+									</a>
+	
+									<a href="#" class="social-icon si-mini si-rounded si-colored si-vimeo">
+										<i class="icon-vimeo"></i>
+										<i class="icon-vimeo"></i>
+									</a>
+	
+									<a href="#" class="social-icon si-mini si-rounded si-colored si-instagram">
+										<i class="icon-instagram"></i>
+										<i class="icon-instagram"></i>
+									</a>
+								--></div>
 							</div>
 						</div>
-				</div>
-			
+					</div>
 	
-
-		</section><!-- #content end -->
+				</div>
+	
+			</footer><!-- #footer end -->
+	
 
 
 <!-- Footer
@@ -611,9 +699,9 @@
 
 <!-- Footer Widgets
 				============================================= -->
-				<div class="footer-widgets-wrap clearfix" style="padding: 80px 0">
+<!--				<div class="footer-widgets-wrap clearfix" style="padding: 80px 0">
 						<div class="col_one_fourth">
-							<div class="footer-logo"><span class="t400 color ls1" style="font-size: 22px; ">Touchsky</span><br><small class="ls3 uppercase" style="color: rgba(255,255,255,0.2);">&copy; 2019 Reserved.</small></div>
+							<div class="footer-logo"><img src="images/tsky/Touchsky247x250.jpg" alt="" height="150" style="margin-top: -30px"></div>
 						</div>
 						<div class="col_three_fourth col_last">
 							<div class="col_one_third">
@@ -621,7 +709,6 @@
 									<h4>Contact Us</h4>
 									<div class="footer-content">
 										<abbr title="Phone Number"><strong>Phone:</strong></abbr> +55 11 4481 8600 <br>
-							<!--			<abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>-->
 										<abbr title="Email Address"><strong>Email:</strong></abbr> contact@touchsky.tech
 									</div>
 								</div>
@@ -672,181 +759,20 @@
 					</div>
 	
 				</div>
+				<div class="clear"></div>
+				<div class="line line-sm"></div>
+				<div class="col_two_third">
+					<small class="t300" style="color: #AAA">Copyrights &copy; 2017 All Rights Reserved by Canvas Inc.</small>
+				</div>
 
-
-					<!-- Footer Widgets
-					============================================= -->
-<!--					<div class="footer-widgets-wrap row pb-5 clearfix">
-	
-						<div class="col-md-8">
-	
-							<div class="widget clearfix">
-	
-								<img src="images/tsky/Touchsky100.png" alt="Footer Logo" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
-	<p> </p>
-	
-	<!--							<div class="line line-sm"></div>
-	
-								<div class="row">
--->	
-								<!--	<div class="col-lg-3 col-6 bottommargin-sm widget_links">
-										<ul>
-											<li><a href="#">Home</a></li>
-											<li><a href="#">About</a></li>
-											<li><a href="#">FAQs</a></li>
-											<li><a href="#">Support</a></li>
-											<li><a href="#">Contact</a></li>
-										</ul>
-									
-	
-									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
-										<ul>
-											<li><a href="#">Shop</a></li>
-											<li><a href="#">Portfolio</a></li>
-											<li><a href="#">Blog</a></li>
-											<li><a href="#">Events</a></li>
-											<li><a href="#">Forums</a></li>
-										</ul>
-									</div>
-	
-									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
-										<ul>
-											<li><a href="#">Corporate</a></li>
-											<li><a href="#">Agency</a></li>
-											<li><a href="#">eCommerce</a></li>
-											<li><a href="#">Personal</a></li>
-											<li><a href="#">One Page</a></li>
-										</ul>
-									</div>
-	
-									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
-										<ul>
-											<li><a href="#">Restaurant</a></li>
-											<li><a href="#">Wedding</a></li>
-											<li><a href="#">App Showcase</a></li>
-											<li><a href="#">Magazine</a></li>
-											<li><a href="#">Landing Page</a></li>
-										</ul>
-									</div></div>-->
-	
-<!--								</div>
-	
-							</div>
-	
-						</div>
--->	
-<!--				<div class="col-md-4">
-	
-							<div class="widget clearfix">
-	
-								<div class="row clearfix">
-	
-									<div class="col-12">
-										<div class="feature-box fbox-light" style="padding-left: 70px">
-											<div class="fbox-icon">
-												<i class="icon-envelope nobg noborder"></i>
-											</div>
-											<span class="text-muted">Call Us:</span><br>
-											<h3 class="nott ls0 t600">(+5511) 4481 8600</h3>
-										</div>
-									</div>
-	
-									<div class="col-12 mt-4">
-										<div class="feature-box fbox-light" style="padding-left: 70px">
-											<div class="fbox-icon">
-												<i class="icon-phone3 nobg noborder"></i>
-											</div>
-											<span class="text-muted">Email Us:</span><br>
-											<h3 class="nott ls0 t600">contact@touchsky.tech</h3>
-										</div>
-									</div>
-	
-								</div>
-	
-							</div>
-	<!--
-							<div class="widget subscribe-widget clearfix">
-								<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
-								<div class="widget-subscribe-form-result"></div>
-								<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="nobottommargin">
-									<div class="input-group divcenter">
-										<div class="input-group-prepend">
-											<div class="input-group-text nobg"><i class="icon-email2"></i></div>
-										</div>
-										<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
-										<div class="input-group-append">
-											<button class="btn btn-success button button-color nott ls0 m-0" type="submit">Subscribe</button>
-										</div>
-									</div>
-								</form>
-							
-							-->
-							<div class="clear"></div>
-						<div class="line line-sm"></div>
-						<div class="col_two_third">
-							<small class="t300" style="color: #AAA">Copyrights &copy; 2019 All Rights Reserved by Touchsky.</small>
-						</div>
-	<!--					<div class="col_one_third col_last">
-							<div class="fright clearfix">
-								<a href="#" class="social-icon si-mini si-rounded si-colored si-facebook">
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-
-								<a href="#" class="social-icon si-mini si-rounded si-colored si-twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								</a>
-
-								<a href="#" class="social-icon si-mini si-rounded si-colored si-gplus">
-									<i class="icon-gplus"></i>
-									<i class="icon-gplus"></i>
-								</a>
-
-								<a href="#" class="social-icon si-mini si-rounded si-colored si-pinterest">
-									<i class="icon-pinterest"></i>
-									<i class="icon-pinterest"></i>
-								</a>
-
-								<a href="#" class="social-icon si-mini si-rounded si-colored si-vimeo">
-									<i class="icon-vimeo"></i>
-									<i class="icon-vimeo"></i>
-								</a>
-
-								<a href="#" class="social-icon si-mini si-rounded si-colored si-instagram">
-									<i class="icon-instagram"></i>
-									<i class="icon-instagram"></i>
-								</a>
-							</div>
-						</div>-->
-						<!--	<div class="widget clearfix" style="margin-bottom: -20px;">
-	
-								<div class="row">
-	
-									<div class="col-lg-6 col-md-12 col-6 clearfix bottommargin-sm">
-										<a href="http://facebook.com/semicolonweb" target="_blank" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">
-											<i class="icon-facebook"></i>
-											<i class="icon-facebook"></i>
-										</a>
-										<a href="http://facebook.com/semicolonweb" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
-									</div>
-									<div class="col-lg-6 col-md-12 col-6 clearfix">
-										<a href="http://themeforest.net/user/SemiColonWeb/follow" target="_blank" class="social-icon si-dark si-colored si-rss nobottommargin" style="margin-right: 10px;">
-											<i class="icon-rss"></i>
-											<i class="icon-rss"></i>
-										</a>
-										<a href="http://themeforest.net/user/SemiColonWeb/follow" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
-									</div>
-	
-								</div>
-	
+			
 							</div>
 	
 						</div>-->
 	
-					</div><!-- .footer-widgets-wrap end -->
+	<!--				</div> --> <!-- .footer-widgets-wrap end -->
 
-	</div><!-- #wrapper end -->
+<!--	</div> --><!-- #wrapper end -->
 
 	<!-- Go To Top
 	============================================= -->
